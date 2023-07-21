@@ -1,6 +1,6 @@
 ﻿using System;
 
-class Numerologia
+public class Numerologia
 {
     static void Main()
     {
