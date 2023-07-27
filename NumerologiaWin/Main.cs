@@ -79,7 +79,7 @@ namespace NumerologiaWin
             try
             {
                 int valorNumerologico = CalcularValorNumerologico(txtText.Text.ToLower().Trim());
-                lbResult.Text = $"\n Valor da palavra \"{txtText.Text.Trim()}\" é: {valorNumerologico} ";
+                lbResult.Text = $"\n Valor da palavra \"{txtText.Text.Trim()}\" é: {valorNumerologico}  e o valor calculado é {CalcularSomaDosDigitos(valorNumerologico)} ";
                 txtText.Text = "";
 
             }
@@ -89,6 +89,23 @@ namespace NumerologiaWin
                 throw;
             }
 
+        }
+        static int CalcularSomaDosDigitos(int numero)
+        {
+            int soma = 0;
+            while (numero != 0)
+            {
+                int digito = numero % 10;
+                soma += digito;
+                numero /= 10;
+            }
+            if (soma == 10) { 
+                    return 1;
+            }
+             if (soma>10) {
+                return CalcularSomaDosDigitos(soma);
+            }
+            return soma;
         }
 
         private void txtText_KeyDown(object sender, KeyEventArgs e)

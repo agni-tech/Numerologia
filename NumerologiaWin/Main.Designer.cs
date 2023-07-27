@@ -97,16 +97,16 @@
             this.lbResult.AutoSize = true;
             this.lbResult.BackColor = System.Drawing.Color.Transparent;
             this.lbResult.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.lbResult.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbResult.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbResult.ForeColor = System.Drawing.Color.Coral;
             this.lbResult.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.lbResult.Location = new System.Drawing.Point(72, 169);
             this.lbResult.Name = "lbResult";
-            this.lbResult.Size = new System.Drawing.Size(20, 29);
+            this.lbResult.Size = new System.Drawing.Size(16, 24);
             this.lbResult.TabIndex = 5;
             this.lbResult.Text = " ";
             // 
-            // Form1
+            // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -119,7 +119,7 @@
             this.Controls.Add(this.cmdEncerrar);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "Form1";
+            this.Name = "Main";
             this.Text = "  Numerologia App";
             this.ResumeLayout(false);
             this.PerformLayout();
